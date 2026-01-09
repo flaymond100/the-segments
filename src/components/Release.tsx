@@ -4,7 +4,6 @@ import { useState } from 'react';
 
 export const Release = () => {
   const [showTracklist, setShowTracklist] = useState(false);
-
   return (
     <Section id="release" className="bg-panel">
       <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
