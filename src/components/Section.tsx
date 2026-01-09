@@ -36,7 +36,7 @@ export const Section = ({ id, children, className = '' }: SectionProps) => {
     <section
       ref={sectionRef}
       id={id}
-      className={`py-20 md:py-28 scroll-mt-24 transition-all duration-700 ${className} ${
+      className={`py-20 md:py-28 scroll-mt-20 md:scroll-mt-24 transition-all duration-700 ${className} ${
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
       }`}
     >

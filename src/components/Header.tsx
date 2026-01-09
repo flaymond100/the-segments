@@ -31,23 +31,51 @@ export const Header = () => {
       }
     };
 
+    // Handle initial hash navigation
+    const handleHashNavigation = () => {
+      const hash = window.location.hash;
+      if (hash) {
+        const targetId = hash.replace('#', '');
+        const element = document.getElementById(targetId);
+        if (element) {
+          setTimeout(() => {
+            const headerOffset = 80;
+            const elementPosition = element.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+            window.scrollTo({
+              top: Math.max(0, offsetPosition),
+              behavior: 'smooth',
+            });
+          }, 100);
+        }
+      }
+    };
+
     window.addEventListener('scroll', handleScroll);
     handleScroll();
+    handleHashNavigation();
+    
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
-    const element = document.querySelector(href);
+    const targetId = href.replace('#', '');
+    const element = document.getElementById(targetId);
     if (element) {
       const headerOffset = 80;
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
       
       window.scrollTo({
-        top: offsetPosition,
+        top: Math.max(0, offsetPosition),
         behavior: 'smooth',
       });
+      
+      // Update URL without triggering scroll
+      const basePath = import.meta.env.BASE_URL;
+      const newUrl = `${basePath}${href}`;
+      window.history.pushState({}, '', newUrl);
     }
   };
 
