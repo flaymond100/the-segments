@@ -94,12 +94,12 @@ export const siteContent: SiteContent = {
     title: 'Latest video: Opening (Official Video)',
   },
   tourDates: [
-    { date: '2025-02-15', city: 'London', venue: 'The Garage', ticketUrl: 'https://ticketmaster.com/...' },
-    { date: '2025-02-22', city: 'Manchester', venue: 'Gorilla', ticketUrl: 'https://ticketmaster.com/...' },
-    { date: '2025-03-05', city: 'Birmingham', venue: 'The Castle & Falcon', ticketUrl: 'https://ticketmaster.com/...' },
+    // { date: '2025-02-15', city: 'London', venue: 'The Garage', ticketUrl: 'https://ticketmaster.com/...' },
+    // { date: '2025-02-22', city: 'Manchester', venue: 'Gorilla', ticketUrl: 'https://ticketmaster.com/...' },
+    // { date: '2025-03-05', city: 'Birmingham', venue: 'The Castle & Falcon', ticketUrl: 'https://ticketmaster.com/...' },
   ],
-  aboutText: 'The Segments emerged from the underground post-punk scene, blending dark atmospherics with raw, DIY energy. Drawing inspiration from the industrial sounds of the 80s and the modern dark indie movement, we create music that is both nostalgic and forward-thinking. Our sound is characterized by driving basslines, reverb-drenched guitars, and introspective lyrics that explore themes of isolation, urban decay, and existential reflection.',
-  ffo: ['Interpol', 'The Chameleons', 'The Sound', 'Protomartyr'],
+  aboutText: 'The Segments is a new sound of Ukrainian post-punk and new wave scene. The band met in 2019 and in a few months they released the debut EP "High and Low". Songs are managed to combine a melancholy mood and loud guitars, the sound of which will take you back to the 90\'s.',
+  ffo: ['Interpol', 'The Chameleons', 'Editors', 'The Cure'],
   newsletter: {
     providerName: 'Mailchimp',
     formActionUrl: 'https://yourmailchimpurl.us1.list-manage.com/subscribe/post?u=...',
