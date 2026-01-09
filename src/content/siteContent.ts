@@ -90,7 +90,7 @@ export const siteContent: SiteContent = {
     { title: 'Echoes', duration: '3:58', url: 'https://open.spotify.com/track/...' },
   ],
   video: {
-    youtubeId: 'dQw4w9WgXcQ',
+    youtubeId: 'IPM1LPc6Rn4',
     title: 'Latest video: Opening (Official Video)',
   },
   tourDates: [
