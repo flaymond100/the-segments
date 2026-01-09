@@ -30,7 +30,7 @@ export const Hero = () => {
     >
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${siteContent.heroImageUrl})` }}
+        style={{ backgroundImage: `url(${import.meta.env.BASE_URL}${siteContent.heroImageUrl.startsWith('/') ? siteContent.heroImageUrl.slice(1) : siteContent.heroImageUrl})` }}
       >
         <div className="absolute inset-0 bg-bg/75 sepia-overlay" />
       </div>

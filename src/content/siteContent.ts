@@ -61,10 +61,10 @@ export interface SiteContent {
 export const siteContent: SiteContent = {
   bandName: 'THE SEGMENTS',
   tagline: 'Post-punk from Kyiv',
-  heroImageUrl: '/src/assets/segments.jpg',
+  heroImageUrl: '/assets/segments.jpg',
   release: {
     title: 'Above the Noise — OUT IN SUMMER 2026',
-    coverUrl: '/src/assets/cover-art.jpg',
+    coverUrl: '/assets/cover-art.jpg',
     description: 'Our debut album captures the raw energy of post-punk with dark, atmospheric undertones. Recorded in a DIY studio, this collection of songs reflects our journey through the underground music scene.',
     links: [
       { platform: 'Spotify', url: 'https://open.spotify.com/artist/...' },

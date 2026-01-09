@@ -10,7 +10,7 @@ export const Release = () => {
       <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
         <div className="order-2 md:order-1">
           <img
-            src={siteContent.release.coverUrl}
+            src={`${import.meta.env.BASE_URL}${siteContent.release.coverUrl.startsWith('/') ? siteContent.release.coverUrl.slice(1) : siteContent.release.coverUrl}`}
             alt={siteContent.release.title}
             className="w-full aspect-square object-cover"
             loading="lazy"
